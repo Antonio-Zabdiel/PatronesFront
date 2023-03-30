@@ -1,3 +1,9 @@
-const response = await fetch('https://ghibliapi.herokuapp.com/films')
-const data = await response.json()
-console.log(data)
+const llamarAPI = async () => {
+    const response = await fetch('https://ghibliapi.herokuapp.com/films')
+    const data = await response.json()
+    console.log(data)
+}
+
+document.getElementById("llamar").onclick = () => {
+    llamarAPI()
+}
