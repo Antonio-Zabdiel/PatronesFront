@@ -1,5 +1,14 @@
 const llamarAPI = async () => {
-    const response = await fetch('https://talented-fox-panama-hat.cyclic.app/')
+    const numero = document.getElementById("numero").value
+    let response = ""
+    //si numero está vacio o es igual a 0, llamar a la api general
+    if (numero == "" || numero == 0) {
+        response = await fetch('https://talented-fox-panama-hat.cyclic.app/getAll')
+    }
+    //si no pedir a la api el registro que tenga esa id
+    else{
+        response = await fetch('https://talented-fox-panama-hat.cyclic.app/get?id='+numero)
+    }
     const data = await response.json()
     const dataConFormato = JSON.stringify(data)
     console.log(dataConFormato)
