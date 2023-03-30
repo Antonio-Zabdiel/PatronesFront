@@ -1,4 +1,36 @@
 .body{
-    background-color: rgb(191, 225, 225);
+    background-color: #f5f0f7;
     font-family: 'Courier New';
+}
+
+.parrafo1{
+    border-radius: 5px;
+    background-color: #cab3d3;
+    text-align: center;
+}
+
+.entrada{
+    background-color: #e3d2ea;
+    border-top: #5a1973;
+    border-left: #5a1973;
+    border-right: #5a1973;
+    border-radius: 7.5px;
+    width: 250px;
+    height: 20px;
+    font-family: 'Courier New';
+}
+
+.boton1{
+    background-color: #e3d2ea;
+    border-top: #5a1973;
+    border-left: #5a1973;
+    border-right: #5a1973;
+    border-radius: 10px;
+    width: 200px;
+    height: 20px;
+    font-family: 'Courier New';
+}
+
+.divcent{
+    text-align: center;
 }
